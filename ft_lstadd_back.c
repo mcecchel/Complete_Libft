@@ -6,7 +6,7 @@
 /*   By: mcecchel <mcecchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 13:12:06 by mcecchel          #+#    #+#             */
-/*   Updated: 2024/12/03 12:52:40 by mcecchel         ###   ########.fr       */
+/*   Updated: 2025/02/04 16:33:58 by mcecchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ e new (puntatore al nuovo elemento da aggiungere).
 ------------------------------------------------------------------------------*/
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(the_list **lst, the_list *new)
 {
-	t_list	*last;
+	the_list	*last;
 
 	if (lst == NULL)
 		return ;

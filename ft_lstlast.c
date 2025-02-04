@@ -6,7 +6,7 @@
 /*   By: mcecchel <mcecchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 18:18:45 by mcecchel          #+#    #+#             */
-/*   Updated: 2024/12/03 12:52:54 by mcecchel         ###   ########.fr       */
+/*   Updated: 2025/02/04 16:34:21 by mcecchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ La funzione restituisce il puntatore all'ultimo elem dell'elenco.
 ------------------------------------------------------------------------------*/
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+the_list	*ft_lstlast(the_list *lst)
 {
 	if (lst == NULL)
 		return (NULL);

@@ -6,38 +6,11 @@
 /*   By: mcecchel <mcecchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 10:54:53 by mcecchel          #+#    #+#             */
-/*   Updated: 2025/02/04 15:59:49 by mcecchel         ###   ########.fr       */
+/*   Updated: 2025/02/04 18:47:28 by mcecchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	len;
-
-	len = 0;
-	while (s != NULL && *s != '\0')
-	{
-		len++;
-		s++;
-	}
-	return (len);
-}
-
-char	*ft_strchr(const char *s, int c)
-{
-	c = (unsigned char)c;
-	while (*s != '\0')
-	{
-		if (*s == c)
-			return ((char *)s);
-		s++;
-	}
-	if (c == '\0')
-		return ((char *)s);
-	return (NULL);
-}
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
@@ -53,30 +26,6 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	{
 		dest[i] = '\0';
 		i++;
-	}
-	return (dest);
-}
-
-void	*ft_memmove(void *dest, const void *src, size_t n)
-{
-	unsigned char		*d;
-	const unsigned char	*s;
-
-	if (src == NULL && dest == NULL)
-		return (NULL);
-	d = (unsigned char *)dest;
-	s = (const unsigned char *)src;
-	if (dest > src && dest < (src + n))
-	{
-		d += n - 1;
-		s += n - 1;
-		while (n--)
-			*d-- = *s--;
-	}
-	else
-	{
-		while (n--)
-			*d++ = *s++;
 	}
 	return (dest);
 }

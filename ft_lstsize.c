@@ -6,7 +6,7 @@
 /*   By: mcecchel <mcecchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 11:59:10 by mcecchel          #+#    #+#             */
-/*   Updated: 2024/12/03 12:53:05 by mcecchel         ###   ########.fr       */
+/*   Updated: 2025/02/04 16:34:46 by mcecchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ di nodi dell'elenco.
 ------------------------------------------------------------------------------*/
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+int	ft_lstsize(the_list *lst)
 {
 	int	count;
 

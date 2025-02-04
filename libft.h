@@ -6,7 +6,7 @@
 /*   By: mcecchel <mcecchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 10:25:56 by mcecchel          #+#    #+#             */
-/*   Updated: 2025/02/04 16:02:41 by mcecchel         ###   ########.fr       */
+/*   Updated: 2025/02/04 18:46:34 by mcecchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,20 +83,20 @@ int		ft_putptr(void *ptr);
 int		ft_printf(const char *str, ...);
 
 // Bonus part
-typedef struct s_list
+typedef struct this_list
 {
 	void			*content;
-	struct s_list	*next;
-}				t_list;
+	struct this_list	*next;
+}				the_list;
 
-t_list	*ft_lstnew(void *content);
-void	ft_lstadd_front(t_list **lst, t_list *new);
-int		ft_lstsize(t_list *lst);
-t_list	*ft_lstlast(t_list *lst);
-void	ft_lstadd_back(t_list **lst, t_list *new);
-void	ft_lstdelone(t_list *lst, void (*del)(void*));
-void	ft_lstclear(t_list **lst, void (*del)(void*));
-void	ft_lstiter(t_list *lst, void (*f)(void *));
+the_list	*ft_lstnew(void *content);
+void		ft_lstadd_front(the_list **lst, the_list *new);
+int			ft_lstsize(the_list *lst);
+the_list	*ft_lstlast(the_list *lst);
+void		ft_lstadd_back(the_list **lst, the_list *new);
+void		ft_lstdelone(the_list *lst, void (*del)(void*));
+void		ft_lstclear(the_list **lst, void (*del)(void*));
+void		ft_lstiter(the_list *lst, void (*f)(void *));
 
 // ft_printf functions
 int		ft_counter(int nbr);

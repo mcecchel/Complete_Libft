@@ -6,7 +6,7 @@
 /*   By: mcecchel <mcecchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/01 13:30:52 by mcecchel          #+#    #+#             */
-/*   Updated: 2024/12/03 12:47:54 by mcecchel         ###   ########.fr       */
+/*   Updated: 2025/02/04 16:34:16 by mcecchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ argomento un puntatore `void`).
 		str++;
 	}
 } */
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(the_list *lst, void (*f)(void *))
 {
 	if (lst == NULL || f == NULL)
 		return ;

@@ -6,7 +6,7 @@
 /*   By: mcecchel <mcecchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 16:54:59 by mcecchel          #+#    #+#             */
-/*   Updated: 2024/12/03 12:53:00 by mcecchel         ###   ########.fr       */
+/*   Updated: 2025/02/04 16:34:41 by mcecchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ La funzione restituisce il puntatore al nuovo nodo creato.
 ------------------------------------------------------------------------------*/
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+the_list	*ft_lstnew(void *content)
 {
-	t_list	*new_node;
+	the_list	*new_node;
 
-	new_node = (t_list *)malloc(sizeof(t_list));
+	new_node = (the_list *)malloc(sizeof(the_list));
 	if (new_node == NULL)
 		return (NULL);
 	new_node->content = content;

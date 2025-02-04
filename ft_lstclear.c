@@ -6,7 +6,7 @@
 /*   By: mcecchel <mcecchel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/01 13:01:18 by mcecchel          #+#    #+#             */
-/*   Updated: 2024/12/03 12:47:44 by mcecchel         ###   ########.fr       */
+/*   Updated: 2025/02/04 16:34:08 by mcecchel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ cancellare il contenuto di ogni elemento).
 ------------------------------------------------------------------------------*/
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(the_list **lst, void (*del)(void*))
 {
-	t_list	*tmp;
+	the_list	*tmp;
 
 	if (lst == NULL || del == NULL)
 		return ;
